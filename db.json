@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "name": "Administrador",
+      "cpf": "490.078.210-67",
+      "email": "admin@umanager.com",
+      "password": "123456",
+      "address": {
+        "cep": "94824-380",
+        "street": "Rua Carlos Gomes",
+        "neighborhood": "Vila Tupã",
+        "city": "Alvorada",
+        "number": "895"
+      },
+      "id": 1
+    }
+  ]
+}
