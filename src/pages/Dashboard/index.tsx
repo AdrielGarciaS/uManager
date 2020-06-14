@@ -57,12 +57,26 @@ const Dashboard: React.FC = () => {
     }
   }, []);
 
+  const handleSearch = useCallback((text: string) => {
+    if (!text) {
+      setSearch('');
+      setPage(1);
+      return;
+    }
+
+    setSearch(text);
+  }, []);
+
   useEffect(() => {
     api
-      .get(`users?q=${search}&_page=${page}${!search && '&_limit=20'}`)
+      .get(
+        `users?q=${search}${
+          !search ? `&_page=${page}&_limit=20` : ''
+        }&_sort=name`,
+      )
       .then(response => {
         setUsers(state => {
-          if (search) {
+          if (search || page === 1) {
             return response.data;
           }
 
@@ -90,9 +104,9 @@ const Dashboard: React.FC = () => {
           <input
             type="text"
             value={search}
-            onChange={e => setSearch(e.target.value)}
+            onChange={e => handleSearch(e.target.value)}
           />
-          <button type="button" onClick={() => setSearch('')}>
+          <button type="button" onClick={() => handleSearch('')}>
             <FiX />
           </button>
         </Search>

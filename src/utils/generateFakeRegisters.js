@@ -6,7 +6,7 @@ const axios = require('axios');
 const leite = new Leite();
 
 async function generateFakeRegisters() {
-  const registers = Array.from({ length: 100 }, () => null);
+  const registers = Array.from({ length: 50 }, () => null);
   const usersToCreate = [];
 
   registers.forEach(() => {
