@@ -6,10 +6,10 @@
       "email": "admin@umanager.com",
       "password": "123456",
       "address": {
-        "cep": "94824-380",
-        "street": "Rua Carlos Gomes",
-        "neighborhood": "Vila Tupã",
-        "city": "Alvorada",
+        "cep": "01034-903",
+        "street": "Rua Antônio de Godói 122",
+        "neighborhood": "Centro",
+        "city": "São Paulo",
         "number": "895"
       },
       "id": 1
