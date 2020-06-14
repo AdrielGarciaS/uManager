@@ -10,6 +10,7 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: 700px;
 `;
 
@@ -17,7 +18,6 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 10px;
 
   height: 160px;
   width: 620px;
@@ -26,8 +26,13 @@ export const Header = styled.header`
   border-radius: 14px;
   padding: 0 40px;
 
+  @media (max-width: 900px) {
+    max-width: 90vw;
+  }
+
   section {
     font-family: 'Baloo Bhai 2', cursive;
+    margin-right: 10px;
 
     h1 {
       text-align: center;
@@ -41,11 +46,15 @@ export const Header = styled.header`
 `;
 
 export const FormContainer = styled.div`
-  margin: 120px;
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 900px) {
+    margin-top: 50px;
+  }
 
   > h3 {
     margin-bottom: 20px;
