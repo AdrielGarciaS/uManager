@@ -2,6 +2,7 @@
 
 > An Application to create, list, edit and delete users.
 
+<img src="logon.png" width="1100" height="400">
 <img src="dashboard.png" width="1200" height="400">
 
 ## :computer: How Run
